@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cursos',
-  templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css']
+    selector: 'app-cursos',
+    templateUrl: './cursos.component.html',
+    styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
 
-  constructor() { }
+    nomePortal: string;
+    cursos: string[] = ['Java', 'Ext JS', 'Angular'];
 
-  ngOnInit() {
-  }
+    constructor() {
+        this.nomePortal = 'http://192.168.15.59';
+    }
+
+    ngOnInit() {
+    }
 
 }
