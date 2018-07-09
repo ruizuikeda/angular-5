@@ -1,0 +1,34 @@
+<section>
+    <article>
+        <h3>Interpolation</h3>
+        <p>String renderizada com interpolação: {{ url }}</p>
+        <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor()}}</p>
+        <p>Curso de Angular é </p>
+    </article>
+    <hr>
+    <article>
+        <h3>Property binding</h3>
+        <img [src]="urlImg">
+    </article>
+    <hr>
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+
+            <select #classe (change)="0">
+                <option value="primary">primary</option>
+                <option value="warning">warning</option>
+                <option value="danger">danger</option>
+                <option value="info">info</option>
+            </select>
+
+            <p>
+                <ngb-alert [dismissible]="false" [type]="classe.value">
+                    <strong>{{ classe.value }}!</strong> Better check yourself, you're not looking too good.
+                </ngb-alert>
+            </p>
+        </div>
+    </article>
+</section>
