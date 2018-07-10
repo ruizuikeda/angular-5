@@ -1,1 +1,11 @@
 <app-data-binding></app-data-binding>
+<hr>
+<section>
+    <article>
+        <h3>Ciclo de vida de um component</h3>
+        <app-ciclo [valorInicial]="valor" *ngIf="!deletarCiclo"></app-ciclo>
+        <button class="btn btn-primary" (click)="mudarValor()">Mudar Valor</button>
+        <button class="btn btn-danger" (click)="destruirCiclo()">Destruir</button>
+    </article>
+</section>
+<br><br><br><br><br>
