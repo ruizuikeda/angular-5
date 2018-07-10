@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     title = 'app';
     valor = 25;
-    deletarCiclo: false;
+    deletarCiclo = false;
 
     mudarValor() {
         this.valor++;
