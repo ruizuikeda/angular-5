@@ -89,6 +89,8 @@
     <article>
         <h3>Input/Output Properties</h3>
         <app-input-property [nome]="nomeDoCurso"></app-input-property>
+        <br>
+        <app-output-property [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></app-output-property>
     </article>
 </section>
 <br><br><br><br><br><br>
